@@ -6,17 +6,25 @@
 		body {
 			text-align: center;
 			font-family: "Lucida Console", Monaco, monospace;
-			font-size: 1.3rem;
+			font-size: 1.7rem;
 		}
 		form {
 			border: solid;
 			border-width: 5px;
 			border-radius: 20px;
 			border-color: #B0C4DE;
-			width: 70%;
-			height: 70%;
+			width: 90%;
+			height: 700px;
 			margin: 50px auto;
 			padding: 15px 15px;
+		}
+
+		.btn {
+			background-color: #B0C4DE;
+			border: none;
+			padding: 10px 25px; 
+			color: white;
+			font-size: 1.5rem;
 		}
 
 		@media (max-width: 641px) {
@@ -34,11 +42,11 @@
 <form>
 	<h1>Kalkulator</h1>
 	Første tall: <input type="number" name="firstNr"> <br><br>
-	Andre tall:  <input type="number" name="secNr"> <br><br>
-	<input type="button" value="+" onclick="pluss()">
-	<input type="button" value="- " onclick="minus()">
-	<input type="button" value="*" onclick="gange()">
-	<input type="button" value="/ " onclick="dele()"> <br>
+	Andre tall: <input type="number" name="secNr"> <br><br><br>
+	<input class="btn" type="button" value="+" onclick="pluss()">
+	<input class="btn" type="button" value="- " onclick="minus()">
+	<input class="btn" type="button" value="*" onclick="gange()"> 
+	<input class="btn" type="button" value="/ " onclick="dele()"> <br><br>
 	<h2>Svar</h2>
 	<h2 id="svar">*****</h2>
 </form>
