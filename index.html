@@ -27,13 +27,28 @@
 			font-size: 1.5rem;
 		}
 
-		@media (max-width: 641px) {
-			form {
-				width: 90%;
-				height: 600px;
-				padding: 0;
-				margin: 0;
-			}
+		@media only screen 
+		and (max-device-width: 812px)
+		and (min-device-width: 375px) {
+            .btn {
+            	padding: 40px 70px;
+            	font-size: 3.3rem;
+            }
+            body {
+            	font-size: 4rem;
+            }
+            form {
+            	width: 95%;
+            	height: 100%;
+            	margin: 60px auto;
+            	padding-bottom: 700px;
+            }
+            
+            .tekst {
+                width: 50%;
+                padding: 30px 43px;
+                font-size: 2.5rem;
+            }
 		}
 	</style>
 </head>
@@ -41,8 +56,10 @@
 	
 <form>
 	<h1>Kalkulator</h1>
-	Første tall: <input type="number" name="firstNr"> <br><br>
-	Andre tall: <input type="number" name="secNr"> <br><br><br>
+	Første tall: <br> <input class="tekst" type="number" name="firstNr"> 
+	<br><br>
+	Andre tall: <br> <input class="tekst" type="number" name="secNr"> 
+	<br><br><br>
 	<input class="btn" type="button" value="+" onclick="pluss()">
 	<input class="btn" type="button" value="- " onclick="minus()">
 	<input class="btn" type="button" value="*" onclick="gange()"> 
